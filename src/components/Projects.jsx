@@ -17,6 +17,8 @@ import {
     Icon2
 } from "./ProjectsElements";
 import RealtorPage from "./images/TaylorsWebpage_squarePreview.png";
+import PathfinderApp from "./images/pathfinder_screenshot.png";
+import Portfolio from "./images/portfolio_screenshot.png";
 import {SiGithub} from "react-icons/si";
 import {CgWebsite} from "react-icons/cg";
 
@@ -33,7 +35,7 @@ function Projects() {
                     <ProjectsDeck className="deck">
                         <ProjectsCardWrapper className="card">
                             <ProjectsCard>
-                                <ProjectImg src={RealtorPage} />
+                                <ProjectImg src={PathfinderApp} />
                                 <IconsContainer>
                                     <IconWrapper>
                                         <Icon1
@@ -59,26 +61,20 @@ function Projects() {
                         </ProjectsCardWrapper>
                         <ProjectsCardWrapper className="card">
                             <ProjectsCard>
-                                <ProjectImg src={RealtorPage} />
+                                <ProjectImg src={Portfolio} />
                                 <IconsContainer>
                                     <IconWrapper>
                                         <Icon1
-                                            href="https://www.github.com/kcharles2013"
+                                            href="https://www.github.com/kcharles2013/WebPortfolio"
                                             target="_blank"
                                         ><SiGithub /></Icon1>
                                     </IconWrapper>
-                                    <IconWrapper>
-                                        <Icon2
-                                            href="https://www.google.com"
-                                            target="_blank"
-                                        ><CgWebsite /></Icon2>
-                                    </IconWrapper>
                                 </IconsContainer>
                                 <ProjectTitle>
-                                    Realtor Page
+                                    Portfolio
                                 </ProjectTitle>
                                 <ProjectDescription>
-                                    A realtor page that is currently being built for a freelance client.
+                                    The link to the code of this portfolio.
                                 </ProjectDescription>
                             </ProjectsCard>
                         </ProjectsCardWrapper>

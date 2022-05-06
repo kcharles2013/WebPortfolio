@@ -62,7 +62,7 @@ export const ProjectsDeck = styled.div`
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 4em;
+    grid-gap: 10em;
     //padding-bottom: 10em;
     margin-bottom: 10em;
   
@@ -100,8 +100,6 @@ export const ProjectsCardWrapper = styled.div`
 
 export const ProjectsCard = styled.div`
   position: absolute;
-  //background-color: var(--SilverText);
-  background-color: transparent;
   border-radius: 10px/7px;
   //box-shadow: 0 0 1px 2px var(--SilverText);
   display: grid;
@@ -116,6 +114,7 @@ export const ProjectsCard = styled.div`
 
   &:hover {
     font-size: 110%;
+    z-index: 1;
   }
 
   @media screen and (max-width: 768px) {
@@ -130,8 +129,11 @@ export const ProjectsCard = styled.div`
 `
 
 export const ProjectImg = styled.img`
+  flex-shrink: 0;
+  //min-width: calc(100% / 10em);
+  //min-height: 100%;
   height: 16em;
-  width: 16em;
+  width: auto;
   border-radius: 10px/7px;
   margin-top: -0.5em;
   margin-bottom: 0.5em;
