@@ -5,16 +5,9 @@ import "./fonts.css";
 import "./animationTiming.css";
 
 
-export const Nav = styled.nav`
-  //:root {
-  //  --riseSpeed: 1.5s;
-  //}
-  // TRY USING THE INDEX.CSS TO CREATE THESE VARS
-  
+export const Nav = styled.nav`  
   background-color: #000;
-  //background-color: #e34c26;
   box-shadow: 0 1px 20px 1px #000;
-  //overflow: hidden;
   color: #fff;
   height: 80px;
   top: 0;
@@ -39,6 +32,7 @@ export const Nav = styled.nav`
   @media screen and (max-width: 520px) {
     font-size: 13px;
   }
+  
   @keyframes slideInFromTop {
     0% {
       transform: translateY(-100%);
@@ -104,14 +98,9 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  //margin-right: -22px;
   margin-left: -4em;
   //MARGIN-LEFT ALLOWS NAV-TABS TO ALINE WITH THE CONTENT BELOW.
     
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-
   @media screen and (max-width: 768px) {
     display: none;
   }

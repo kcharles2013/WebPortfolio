@@ -10,8 +10,8 @@ import "./AboutStyles.css";
 
 function About() {
     return (
-        <AboutContainer id="about">
-            <AboutWrapper id="about-wrapper">
+        <div className="about-container" id="about">
+            <div className="about-wrapper" id="about-wrapper">
                 <AboutTitleContentWrapper id="about-title-content-wrapper">
                     <AboutTitle className="about-section" id="about-title">
                         Hello There
@@ -23,8 +23,8 @@ function About() {
                         ability to efficiently learn a new skill and apply it in the workplace.
                     </AboutContent>
                 </AboutTitleContentWrapper>
-            </AboutWrapper>
-        </AboutContainer>
+            </div>
+        </div>
     )
 }
 

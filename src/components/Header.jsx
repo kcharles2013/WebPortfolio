@@ -1,23 +1,16 @@
 import React from "react";
 import {FaBars} from "react-icons/fa";
-import {
-    Nav,
-    NavbarContainer,
-    NavLogo,
-    DropdownButton,
-    NavMenu,
-    NavItem,
-    NavLink,
-    NavBtn,
-    NavBtnLink
-} from "./HeaderElements";
+import "./HeaderStyles.css";
+import { Link as LinkS } from "react-scroll";
 
 function Header({toggle} ) {
 
     return (
-        <Nav>
-            <NavbarContainer>
-                <NavLogo
+        <nav className="nav" id="nav">
+            <div className="navbar-container" id="navbar-container">
+                <LinkS
+                    className="nav-logo"
+                    id="nav-logo"
                     to="home"
                     smooth={true}
                     duration={500}
@@ -26,57 +19,74 @@ function Header({toggle} ) {
                     offset={-80}
                 >
                     &lt;LC/&gt;
-                </NavLogo>
-                <DropdownButton onClick={toggle}>
+                </LinkS>
+                <div
+                    className="dropdown-button"
+                    id="dropdown-button"
+                    onClick={toggle}
+                >
                     <FaBars />
-                </DropdownButton>
-                <NavMenu>
-                    <NavItem>
-                        <NavLink
+                </div>
+                <ul className="nav-menu" id="nav-menu">
+                    <li className="nav-item" id="nav-item">
+                        <LinkS
+                            className="nav-link"
+                            id="nav-link"
                             to="about"
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact="true"
                             offset={-80}
-                        >About</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
+                        >About</LinkS>
+                    </li>
+                    <li className="nav-item" id="nav-item">
+                        <LinkS
+                            className="nav-link"
+                            id="nav-link"
                             to="skills"
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact="true"
                             offset={-80}
-                        >Skills</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
+                        >Skills</LinkS>
+                    </li>
+                    <li className="nav-item" id="nav-item">
+                        <LinkS
+                            className="nav-link"
+                            id="nav-link"
                             to="projects"
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact="true"
                             offset={-80}
-                        >Projects</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
+                        >Projects</LinkS>
+                    </li>
+                    <li className="nav-item" id="nav-item">
+                        <LinkS
+                            className="nav-link"
+                            id="nav-link"
                             to="contactMe"
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact="true"
                             offset={-80}
-                        >Contact Me</NavLink>
-                    </NavItem>
-                </NavMenu>
-                <NavBtn>
-                    <NavBtnLink href="https://github.com/kcharles2013" target="_blank">Github</NavBtnLink>
-                </NavBtn>
-            </NavbarContainer>
-        </Nav>
+                        >Contact Me</LinkS>
+                    </li>
+                </ul>
+                <nav className="nav-button" id="nav-button">
+                    <a
+                        className="nav-button-link"
+                        id="nav-button-link"
+                        href="https://github.com/kcharles2013"
+                        target="_blank"
+                    >Github</a>
+                </nav>
+            </div>
+        </nav>
     )
 }
 
