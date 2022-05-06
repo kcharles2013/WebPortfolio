@@ -1,0 +1,12 @@
+* {
+    --AboutTitleBottomMargin: 2em;
+    --SilverText: #ada8b6;
+}
+
+.about-section {
+    /*background-color: red;*/
+}
+
+.is-active {
+    color: red;
+}

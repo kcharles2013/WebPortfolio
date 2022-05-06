@@ -1,0 +1,31 @@
+* {
+    --TitleMargin: 0.5em;
+    --IntroTiming: 0.8s;
+
+    /* COLORS */
+    --SilverText: #ada8b6;
+    --ButtonHoverBlue: #2667ff;
+
+    /* INTRO PADDING */
+    --IntroPaddingTopBottom: 10em;
+    --IntroPaddingTopBottom768: 12em;
+    --IntroPaddingTopBottom520: 15em;
+
+    /* ICON VARIABLES */
+    --IconFontSize: 4.5em;
+    --IconFontSizeHover: 5.5em;
+    --IconMargins: 5px;
+
+    --IconFontSize768: 3em;
+    --IconFontSizeHover768: 3.5em;
+    --IconMargins768: 3em;
+
+    /* ICONS WRAPPERS VARS */
+    --Wrapper1Translate: -10.5em;
+    --Wrapper2Translate: -7em;
+    --Wrapper3Translate: -3.5em;
+    --Wrapper5Translate: 3.5em;
+    --Wrapper6Translate: 7em;
+    --Wrapper7Translate: 10.5em;
+
+}

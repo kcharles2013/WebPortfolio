@@ -1,0 +1,10 @@
+.deck:hover > * {
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+.deck:hover > *:hover {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    /*cursor: pointer;*/
+}

@@ -1,0 +1,9 @@
+* {
+    --NavLeftRightMargin: 5em;
+    --TitleMargin: 0.5em;
+    --ButtonMargin: 2.8em;
+
+    /* COLORS */
+    --SilverText: #ada8b6;
+    --ButtonHoverBlue: #2667ff;
+}
