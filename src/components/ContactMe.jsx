@@ -26,7 +26,7 @@ function ContactMe() {
                     </CMContent>
                     <CMContent>
                         <CMTitleName>Email: </CMTitleName>
-                        <CMDescription>LeeDev@gmail.com</CMDescription>
+                        <CMDescription>leecharlesdev@gmail.com</CMDescription>
                     </CMContent>
                 </CMContentWrapper>
             </ContactMeWrapper>
